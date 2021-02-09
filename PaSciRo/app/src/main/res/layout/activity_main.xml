@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131313"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imgNight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#00131313"
+        android:contentDescription="@string/restart"
+        android:onClick="night"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtScoreMe"
+        app:srcCompat="@drawable/night" />
+
+    <TextView
+        android:id="@+id/txtScoreMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/scoreMe"
+        android:textColor="#2ABACD"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#3C3F41"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtScorePc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/scorePc"
+        android:textColor="#2ABACD"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#3C3F41"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/status"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#3C3F41"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/free" />
+
+    <ImageView
+        android:id="@+id/imgMach"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/imgMach"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/question" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifMach"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/anim"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/free"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgRestart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#00131313"
+        android:contentDescription="@string/restart"
+        android:onClick="restart"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtScorePc"
+        app:srcCompat="@drawable/restart" />
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/rock"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/rock"
+            android:onClick="rockSecim"
+            app:srcCompat="@drawable/rock" />
+
+        <ImageView
+            android:id="@+id/paper"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/paper"
+            android:onClick="paperSecim"
+            app:srcCompat="@drawable/paper" />
+
+        <ImageView
+            android:id="@+id/scissors"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/scissors"
+            android:onClick="scissorsSecim"
+            app:srcCompat="@drawable/scissors" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

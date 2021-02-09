@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PaSciRo</string>
+    <string name="rock">TODO</string>
+    <string name="paper">TODO</string>
+    <string name="scissors">TODO</string>
+    <string name="scoreMe">Me : 0</string>
+    <string name="scorePc">0 : Mach</string>
+    <string name="imgMach">TODO</string>
+    <string name="status">Status</string>
+    <string name="restart">TODO</string>
+</resources>
