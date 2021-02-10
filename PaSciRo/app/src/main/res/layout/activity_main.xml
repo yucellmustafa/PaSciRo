@@ -65,38 +65,15 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/free" />
-
-    <ImageView
-        android:id="@+id/imgMach"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:contentDescription="@string/imgMach"
-        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/question" />
+        app:layout_constraintTop_toBottomOf="@+id/gifMach" />
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifMach"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@drawable/anim"
-        android:visibility="invisible"
+        android:src="@drawable/question"
         app:layout_constraintBottom_toTopOf="@+id/bottomBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/free"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
