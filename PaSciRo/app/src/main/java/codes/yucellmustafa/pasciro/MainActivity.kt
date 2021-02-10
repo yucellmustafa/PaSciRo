@@ -9,7 +9,6 @@ import android.os.Handler
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random
 
