@@ -32,8 +32,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun sound(music : Int){
-        var breakk = MediaPlayer.create(this,music)
-        breakk.start()
+        var mp = MediaPlayer.create(this, music)
+        mp.start()
+        mp.setOnCompletionListener({ mp -> mp.release() })
     }
     fun machSecim() : Int{
         mach = Random.nextInt(1,4)
